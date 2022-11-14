@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@800&display=swap" rel="stylesheet">
+    <style>
+        /* CSS for Reset */
+        body {
+            color: white;
+            margin: 0px;
+            padding: 0px;
+            background: url(image/fitness.jpg);
+            height:1200px;
+
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 1px solid red; */
+            position: absolute;
+            left: 34px;
+            top: 18px;
+
+        }
+
+        .left img {
+            width: 75px;
+            border-radius: 40px;
+            border: 1px solid white;
+        }
+
+        .mid {
+            display: block;
+            margin: 25px auto;
+            width: 50%;
+            /* border: 1px solid green; */
+        }
+
+        .right {
+            display: inline-block;
+            position: absolute;
+            right: 34px;
+            top: 25px;
+            /* border: 1px solid yellow; */
+        }
+
+        ul li {
+            display: inline-block;
+            color: white;
+            text-decoration: none;
+            padding: 0px 34px 0px 0px;
+        }
+
+        ul li a {
+            color: white;
+            text-decoration: none;
+
+        }
+
+        ul li a:hover,
+        ul li a:active {
+            color: red;
+            text-decoration: none;
+
+        }
+
+        .btn {
+            background-color: black;
+            color: white;
+            margin: 0px 9px;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 6px 12px;
+            border: 1px solid white;
+            border-radius: 20px;
+        }
+
+        .btn:hover {
+            color: black;
+            background-color: gray;
+        }
+
+        .container {
+            display: block;
+            border: 2px solid white;
+            margin: 100px 40px;
+            padding: 75px;
+            border-radius: 20px;
+            color: white;
+            width: 33%;
+        }
+        .container h1{
+            text-align: center;
+        }
+
+        .heading {
+            font-size: 22px;
+        }
+
+        .group1 {
+            display: block;
+            margin: 11px auto;
+            padding: 4px 85px;
+            border: 1px solid black;
+            border-radius: 20px;
+            font-size: 15px;
+            color: gray;
+            text-align: center;
+        }
+        #btn1{
+            text-align: center;
+            display: block;
+            width: 86%;
+            margin: 20px auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <!-- left bar for logo  -->
+        <div class="left">
+            <div>
+                <img src="image/kk.png" alt="">
+            </div>
+            <div>
+                KK Moives
+            </div>
+        </div>
+        <!-- mid for navbar -->
+        <div class="mid">
+            <ul>
+                <li> <a href="#"> Home</a> </li>
+                <li> <a href="#"> About Us</a></li>
+                <li> <a href="#"> Fitness Calculator</a></li>
+                <li> <a href="#"> Contact Us</a></li>
+            </ul>
+        </div>
+        <!-- right for button  -->
+        <div class="right">
+            <button class="btn">Call Us </button>
+            <button class="btn"> Email Us</button>
+        </div>
+    </div>
+    <div class="container">
+        <h1 class="heading">Join the Best jam in Dehli now</h1>
+        <form action="noaction.php">
+            <div class="group">
+
+                <input class="group1" type="text" name="Name    " id="N1" placeholder="Enter your Name">
+            </div>
+            <div class="group">
+
+                <input class="group1" type="text" name="Age" id="N1" placeholder="Enter your Age">
+            </div>
+            <div class="group">
+
+                <input class="group1" type="text" name="Geneder" id="N1" placeholder="Enter your Gender">
+            </div>
+            <div class="group">
+
+                <input class="group1" type="text" name="Localty" id="N1" placeholder="Enter your Localty">
+            </div>
+
+
+            <button id="btn1" class="btn">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
